@@ -1,3 +1,9 @@
+body{
+    margin: 0;
+}
+
+
+
 .layout-wrapper{
     height: 100vh;
     width: 100vw;
@@ -7,12 +13,12 @@
                          "lateral     principal principal  principal"
                          "lateral     principal principal  principal"
                          "lateralinf  principal principal  principal";
-    grid-template-rows: 50px 1px auto auto auto;
+    grid-template-rows: 50px 1px auto auto 50px;
     grid-template-columns: 240px auto auto auto;
 
 }
 
-@media (max-width: 600px){
+@media (max-width: 700px){
     .layout-wrapper{
         height: 100vh;
         width: 100vw;
@@ -22,31 +28,36 @@
                              "lateral     principal principal  principal"
                              "lateral     principal principal  principal"
                              "lateralinf  principal principal  principal";
-        grid-template-rows: 25px 1px auto auto auto;
-        grid-template-columns: 25px auto auto auto;
+        grid-template-rows: 40px 1px auto auto auto;
+        grid-template-columns: 40px auto auto auto;
     
     }
 }
 
+
 .principal{
     grid-area: principal;
-    background-color: "#0E0E10";
+    background-color: rgb(14, 14, 16);
 }
 
 .barrasup{
     
     grid-area: barrasup;
-    background-color: rgb(28, 204, 57);
+    background-color: rgb(24, 24, 27);
 }
 .divisao{
     grid-area: divisao;
+    background-color: black;
 }
 .lateral{
     grid-area: lateral;
-    background-color: black;
+    background-color: rgb(31, 31, 35);
 }
 
 .lateralinf{
     grid-area: lateralinf;
-    background-color: black;
+    background-color: rgb(31, 31, 35);
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: rgb(76, 76, 79);
 }
