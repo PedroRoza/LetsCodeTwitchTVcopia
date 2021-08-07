@@ -1,10 +1,6 @@
 body{
     margin: 0;
 }
-.input{
-    width: 100%;
-}
-
 
 .layout-wrapper{
     height: 100vh;
@@ -46,7 +42,26 @@ body{
     
     grid-area: barrasup;
     background-color: rgb(24, 24, 27);
+
+    height: 50px;
+    width: 1084;
+    display: grid;
+    grid-template-areas: "procurar buscar topright";
+    grid-template-columns: 394px 345px 345px;
+
 }
+
+.procurar{
+    grid-area: procurar;
+}
+.buscar{
+    grid-area: buscar;
+    text-align: center;
+}
+.topright{
+    grid-area: topright;
+}
+
 .divisao{
     grid-area: divisao;
     background-color: black;
