@@ -47,19 +47,54 @@ body{
     width: 1084;
     display: grid;
     grid-template-areas: "procurar buscar topright";
-    grid-template-columns: 394px 345px 345px;
-
+    grid-template-columns: 450px auto 150px;
 }
 
 .procurar{
     grid-area: procurar;
 }
-.buscar{
-    grid-area: buscar;
-    text-align: center;
+a:hover{
+    background-color: #ebc53ca6;
 }
+.form-control{
+    color: #EBC43C;
+}
+.img1:hover{
+    background-color: #EBC43C;
+}
+.navbar{
+    height: 50px;
+    display: block;
+
+}
+.letrabusca{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+}
+.buscar{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.barrapesquisa{
+    width: 350px;
+    background-color: #464649 ;
+    color: yellow;
+}
+
+.supdireita{
+    font-family: sans-serif;
+    font-weight:900;
+}
+
+
+
 .topright{
     grid-area: topright;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .divisao{
