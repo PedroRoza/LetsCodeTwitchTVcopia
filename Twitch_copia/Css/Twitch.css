@@ -47,9 +47,9 @@ lu{
 
     height: 50px;
     width: 1084;
-    display: grid;
+    display: flex;
     grid-template-areas: "procurar buscar topright";
-    grid-template-columns: 450px 400px 450px;
+    grid-template-columns: auto auto auto;
 }
 
 .procurar{
@@ -296,4 +296,41 @@ a:hover{
     color: white;
     box-shadow: inset 0 0 0 1px #EBC43C;
     
+}
+.maincontrol{
+    display: flex;
+    flex-direction: column;
+}
+.carouselExampleIndicators{
+    position: absolute;
+    left: 200px;
+}
+.videoslide{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(14, 14, 16);
+
+}
+
+.legenda{
+    display: flex;
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.486);
+    left: 550px;
+    transition: ease-out 0.3s;
+}
+.legenda:hover{
+    background-color: red;
+}
+.btn-aovivo{
+    position: absolute;
+    left: 270px;
+    top: 10px;
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
 }
