@@ -169,6 +169,11 @@ lu{
         position: absolute;
         left: 5px;
     }
+    span.img1{
+        position: relative;
+        left: 10px;
+    }
+
 
 
 
@@ -374,13 +379,15 @@ a:hover{
     margin-top: auto;
 }
 .exception{
-    position: relative;
+    position: absolute;
     left: 10px;
     color: rebeccapurple;
     text-decoration: none;
+    top: 110%;
 }
 .exception:hover{
     background: none;
+    color: rebeccapurple;
 }
 .containerinf{
     position: relative;
@@ -449,15 +456,13 @@ a:hover{
     position: absolute;
     color: white;
     background-color: rgba(0, 0, 0, 0.486);
-    left: 550px;
-    transition: ease-out 0.3s;
-}
-.legenda:hover{
-    background-color: red;
+    font-size: 25px;
+    left: 400px;
+    top: 10px;
 }
 .btn-aovivo{
     position: absolute;
-    left: 270px;
+    left: 160px;
     top: 10px;
     color: white;
     background-color: red;
@@ -477,4 +482,100 @@ a:hover{
     position: relative;
     left: -50px;
 
+}
+.img1{
+    position: relative;
+    left: -30px;
+}
+a.carousel-control-prev{
+    position: absolute;
+    margin-top: 130px;
+    margin-bottom: auto;
+    left: 65px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+a.carousel-control-next{
+    position: absolute;
+    margin-top: 130px;
+    margin-bottom: auto;
+    right: 65px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.tituloprincipal{
+    position: relative;
+    display: flex;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.videoslide{
+    height: 300px;
+    width: 530px;
+    margin-left: 150px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-left: 1px solid gold ;
+    border-top: 1px solid gold;
+    border-bottom: 1px solid gold;
+}
+
+div.videoslide-lateral{
+    background-color: rgb(22, 22, 24);
+    position: relative;
+    top: -307px;
+    left: 680px;
+    width: 230px;
+    height: 301px;
+    color: white;
+    border-right: 1px solid gold ;
+    border-top: 2px solid gold;
+    border-bottom: 1px solid gold;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.lateral{
+    display: block;
+
+}
+.descritionmain{
+    border-radius: 50%;
+    margin-top: 10px ;
+    margin-left: 10px;
+}
+.description{
+    position: absolute;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: rgb(136, 81, 190);
+    top: 10px;
+    left: 65px;
+    transition: 0s ease;
+}
+.description:hover{
+    background-color: transparent;
+    color: rgb(136, 81, 190);
+}
+.descrit{
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    top: 30px;
+    left: 65px;
+    color: rgb(136, 81, 190);
+}
+.descrit2{
+    position: absolute;
+    top: 50px;
+    left: 65px;
+    font-weight:normal;
 }
