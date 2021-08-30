@@ -6,7 +6,7 @@ lu{
 }
 .layout-wrapper{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-areas: "barrasup    barrasup  barrasup   barrasup"
                          "divisao     divisao   divisao    divisao"
@@ -18,7 +18,7 @@ lu{
 
 }
 
-@media (max-width: 700px){
+@media (max-width: 820px){
     .layout-wrapper{
         height: 100vh;
         width: 100vw;
@@ -32,6 +32,148 @@ lu{
         grid-template-columns: 40px auto auto auto;
     
     }
+    .controle{
+        display: none;
+    }
+    .headlat{
+        display: none;
+    }
+    .lateralinf{
+        display: none;
+    }
+    .comprarbits{
+        display: none;
+    }
+    button.btn-1{
+        display: flexbox;
+        position: relative;
+        top: 0px;
+        Right: 20px;
+        width: 40px;
+    }
+    .avatar{
+        margin-right: 25px;
+    }
+    img.bits{
+        position: relative;
+        left: 0px;
+    }
+    .buttonDefault{
+        display: flexbox;
+        position: relative;
+        right: 20px;
+    }
+    .d-flex{
+        display: none;
+    }
+    .barrasup{
+        display: flex;
+    }
+    .divisao{
+        display: flex;
+        width: 100%;
+        top: 10px;
+        position: relative;
+    }
+    .lateral{
+        position: absolute;
+        top: 50px;
+        width: 40px;
+        left: 0px;
+        height: 100%;
+    }
+    .divisao{
+        display: none;
+    }
+    .principal{
+        position: absolute;
+        top: 50px;
+        height: 100%;
+        width: 100%;
+    }
+    .buscar{
+        display: none;
+    }
+    input.input-1{
+        display: flexbox;
+        position: absolute;
+        left: 100px;
+        width: 200px;
+    }
+    .btn-lupa{
+        display: flexbox;
+        position: fixed;;
+        left: -66px;
+        top: 2px;
+    }
+    .buscar{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .logotwitch{
+        width: 40px;
+        height: 40px;
+       position: relative;
+    }
+    .container-fluid{
+        position: relative;
+        left: -20px;
+    }
+    .nav-item{
+        display: none;
+    }
+    .procurar{
+        display: block;
+        position: relative;
+        width: 40px;
+    }
+    .maincontrol{
+        display: flexbox;
+        width: 80%;
+        height: 50%;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h2.legenda{
+
+        position: absolute;
+        top: 30px;
+        left: 250px;
+        font-size: 30px;
+
+    }
+    button.btn-aovivo{
+        position: absolute;
+        top: 30px;
+        left: 10px;
+    }
+    div.titulolateral{
+        display: none;
+    }
+    .exception{
+        display: none;
+    }
+    .lateralinf{
+        display: none;
+    }
+    button.bnt-lateral{
+        width: 40px;
+        position: relative;
+        top: 10px;
+
+    }
+    img.tamicon{
+        position: absolute;
+        left: 5px;
+    }
+
+
+
+
+
 }
 
 
@@ -39,7 +181,6 @@ lu{
     grid-area: principal;
     background-color: rgb(14, 14, 16);
 }
-
 .barrasup{
     
     grid-area: barrasup;
@@ -47,11 +188,10 @@ lu{
 
     height: 50px;
     width: 1084;
-    display: flex;
+    display: grid;
     grid-template-areas: "procurar buscar topright";
     grid-template-columns: auto auto auto;
 }
-
 .procurar{
     grid-area: procurar;
 }
@@ -84,15 +224,11 @@ a:hover{
     background-color: #464649 ;
     color: yellow;
 }
-
 .supdireita{
     
     font-family: sans-serif;
     font-weight:900;
 }
-
-
-
 .topright{
     grid-area: topright;
     margin-top: auto;
@@ -100,7 +236,6 @@ a:hover{
 
     margin-bottom: auto;
 }
-
 .divisao{
     grid-area: divisao;
     background-color: black;
@@ -109,7 +244,6 @@ a:hover{
     grid-area: lateral;
     background-color: rgb(31, 31, 35);
 }
-
 .lateralinf{
     grid-area: lateralinf;
     background-color: rgb(31, 31, 35);
@@ -190,7 +324,6 @@ a:hover{
 .buttonDefault:hover{
     box-shadow: inset 30px 0 0 0 #ebc53ca6;
 }
-
 .lateral-container{
     flex-direction: column;
     display: flex;
@@ -311,7 +444,6 @@ a:hover{
     background-color: rgb(14, 14, 16);
 
 }
-
 .legenda{
     display: flex;
     position: absolute;
@@ -333,4 +465,16 @@ a:hover{
     border: none;
     border-radius: 5px;
     text-align: center;
+}
+.comprarbits{
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+.bits{
+    position: relative;
+    left: -50px;
+
 }
